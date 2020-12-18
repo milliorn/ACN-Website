@@ -10147,6 +10147,7 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
+    font-family: Neverwinter;
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
@@ -10483,4 +10484,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@font-face {
+
+  font-family: Neverwinter;
+  src: url(Neverwinter.otf);
 }
