@@ -9987,6 +9987,7 @@ p {
 
 .page-section {
   padding: 6rem 0;
+  
 }
 .page-section h2.section-heading {
   font-size: 2.5rem;
@@ -10412,15 +10413,18 @@ header.masthead .masthead-heading {
     padding: 0 100px 20px 20px;
   }
 }
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
 }
+
 .team-member img {
   width: 14rem;
   height: 14rem;
   border: 0.5rem solid rgba(0, 0, 0, 0.1);
 }
+
 .team-member h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
