@@ -10506,6 +10506,10 @@ section#contact form#contactForm :-ms-input-placeholder {
   transform: scale(1.1);
 }
 
+.thumbnail:hover {
+  transform: scale(1.1);
+}
+
 @font-face {
 
   font-family: Neverwinter;
