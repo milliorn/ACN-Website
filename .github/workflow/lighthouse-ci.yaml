@@ -11,8 +11,9 @@ jobs:
           token: ${{ secrets.PAT }}
           submodules: recursive
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Hugo setup
+        uses: peaceiris/actions-hugo@v2.4.13
+
         with:
           hugo-version: "0.76.5"
           extended: true
