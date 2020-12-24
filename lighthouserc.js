@@ -21,3 +21,10 @@ module.exports = {
         },
     },
 };
+
+
+/*
+lighthouse:all: Asserts that every audit received a perfect score
+lighthouse:recommended: Asserts that every audit outside performance received a perfect score, and warns when metric values drop below a score of 90
+lighthouse:no-pwa: The same as lighthouse:recommended but without any of the PWA audits
+*/
