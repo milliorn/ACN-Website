@@ -36,7 +36,8 @@
         "url": "https://github.com/StartBootstrap/startbootstrap-agency.git"
     },
     "dependencies": {
-        "bootstrap": "4.5.3"
+        "bootstrap": "4.5.3",
+        "imagemin": "^7.0.1"
     },
     "devDependencies": {
         "autoprefixer": "10.0.1",
