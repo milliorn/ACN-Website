@@ -2,3 +2,6 @@ node_modules
 .DS_Store
 debug.log
 firebase-debug.log
+.firebase/hosting.cHVibGlj.cache
+.firebase
+.firebaserc
