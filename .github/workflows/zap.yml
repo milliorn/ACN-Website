@@ -1,4 +1,4 @@
-name: setup-node
+name: OWASP ZAP
 on: push
 jobs:
   build:
