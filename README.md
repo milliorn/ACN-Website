@@ -1,5 +1,3 @@
 # ACN-Website
 
 WIP
-
-Firebase
