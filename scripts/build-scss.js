@@ -1,5 +1,1 @@
-'use strict';
-
-const renderSCSS = require('./render-scss');
-
-renderSCSS();
+"use strict";const renderSCSS=require("./render-scss");renderSCSS();

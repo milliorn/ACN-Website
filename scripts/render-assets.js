@@ -1,11 +1,1 @@
-'use strict';
-const fs = require('fs');
-const path = require('path');
-const sh = require('shelljs');
-
-module.exports = function renderAssets() {
-    const sourcePath = path.resolve(path.dirname(__filename), '../src/assets');
-    const destPath = path.resolve(path.dirname(__filename), '../dist/.');
-
-    sh.cp('-R', sourcePath, destPath)
-};
+"use strict";const fs=require("fs"),path=require("path"),sh=require("shelljs");module.exports=function(){const e=path.resolve(path.dirname(__filename),"../src/assets"),s=path.resolve(path.dirname(__filename),"../dist/.");sh.cp("-R",e,s)};

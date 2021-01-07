@@ -1,5 +1,1 @@
-'use strict';
-
-const renderScripts = require('./render-scripts');
-
-renderScripts();
+"use strict";const renderScripts=require("./render-scripts");renderScripts();
