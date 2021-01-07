@@ -1,6 +1,6 @@
- name: Cache multiple paths
- on: push
- jobs:
+name: Cache multiple paths
+on: push
+jobs:
   build:
     runs-on: ubuntu-16.04
     steps:
