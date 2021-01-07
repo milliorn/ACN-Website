@@ -10516,15 +10516,15 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .masthead-subheading-welcome {
   font-family: "Neverwinter";
-      font-size: 2.25rem;
-    font-style: italic;
-    line-height: 2.25rem;
-    margin-bottom: 2rem;
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
 }
 
 @font-face {
   font-family: Neverwinter;
-  src: url('/public/assets/fonts/Neverwinter.otf');
+  src: url('../assets/fonts/Neverwinter.otf');
   /*How to avoid showing invisible text #*/
   font-display: swap;
 }
