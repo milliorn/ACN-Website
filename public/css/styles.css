@@ -474,6 +474,11 @@ mark,
   content: "— ";
 }
 
+.img-fluid-beamdog {
+  max-width: 100%;
+  height: auto;
+}
+
 .img-fluid {
   max-width: 100%;
   height: auto;
