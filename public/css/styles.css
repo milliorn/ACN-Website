@@ -10161,7 +10161,6 @@ header.masthead .masthead-heading {
     padding-bottom: 12.5rem;
   }
   header.masthead .masthead-subheading {
-    font-family: Neverwinter;
     font-size: 2.25rem;
     font-style: italic;
     line-height: 2.25rem;
@@ -10515,9 +10514,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   transform: scale(1.1);
 }
 
+.masthead-subheading-welcome {
+  font-family: "Neverwinter";
+  font-size: 2.25rem;
+  font-style: italic;
+  line-height: 2.25rem;
+  margin-bottom: 2rem;
+}
+
 @font-face {
   font-family: Neverwinter;
-  src: url(/dist/assets/fonts/Neverwinter.otf);
+  src: url('/public/assets/fonts/Neverwinter.otf');
   /*How to avoid showing invisible text #*/
   font-display: swap;
 }
