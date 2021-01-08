@@ -1,4 +1,4 @@
-name: Cache multiple paths
+name: Cache
 on: [push, pull_request, create, delete]
 jobs:
   build:
