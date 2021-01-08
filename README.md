@@ -8,4 +8,3 @@
 ![Cache multiple paths](https://github.com/milliorn/ACN-Website/workflows/Cache%20multiple%20paths/badge.svg)
 ![OSSAR](https://github.com/milliorn/ACN-Website/workflows/OSSAR/badge.svg?branch=master)
 ![CodeQL](https://github.com/milliorn/ACN-Website/workflows/CodeQL/badge.svg?branch=master)
-[![Tweeting](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/scottmilliorn)
