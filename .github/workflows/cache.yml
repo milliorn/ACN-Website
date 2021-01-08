@@ -1,5 +1,5 @@
 name: Cache multiple paths
-on: push
+on: [push, pull_request, create, delete]
 jobs:
   build:
     runs-on: ubuntu-16.04
