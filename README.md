@@ -8,4 +8,5 @@
 ![Cache multiple paths](https://github.com/milliorn/ACN-Website/workflows/Cache%20multiple%20paths/badge.svg)
 ![OSSAR](https://github.com/milliorn/ACN-Website/workflows/OSSAR/badge.svg?branch=master)
 ![CodeQL](https://github.com/milliorn/ACN-Website/workflows/CodeQL/badge.svg?branch=master)
-![Lighthouse 100 Score](public\assets\img\lighthouse-100.bmp "Google Lighthouse 100!")
+
+![Lighthouse 100 Score](public\assets\img\lighthouse-100.bmp)
