@@ -9,4 +9,4 @@
 ![OSSAR](https://github.com/milliorn/ACN-Website/workflows/OSSAR/badge.svg?branch=master)
 ![CodeQL](https://github.com/milliorn/ACN-Website/workflows/CodeQL/badge.svg?branch=master)
 
-![Lighthouse 100 Score](public\assets\img\lighthouse-100.bmp)
+![Lighthouse 100 Score](https://github.com/milliorn/ACN-Website/blob/master/public/assets/img/100.jpg)
