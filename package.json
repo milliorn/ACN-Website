@@ -44,7 +44,7 @@
         "chokidar": "3.5.1",
         "concurrently": "6.1.0",
         "postcss": "8.2.14",
-        "prettier": "2.2.1",
+        "prettier": "2.3.0",
         "pug": "3.0.2",
         "sass": "1.32.12",
         "shelljs": "0.8.4"
