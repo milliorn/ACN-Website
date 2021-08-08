@@ -42,7 +42,7 @@
         "autoprefixer": "10.3.1",
         "browser-sync": "2.27.5",
         "chokidar": "3.5.2",
-        "concurrently": "6.2.0",
+        "concurrently": "6.2.1",
         "postcss": "8.3.6",
         "prettier": "2.3.2",
         "pug": "3.0.2",
