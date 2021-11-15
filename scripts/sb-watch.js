@@ -22,7 +22,6 @@ watcher.on("add", (filePath) => _processFile(filePath, "add"));
 watcher.on("change", (filePath) => _processFile(filePath, "change"));
 watcher.on("ready", () => {
     READY = true;
-    
 });
 
 _handleSCSS();
@@ -41,8 +40,6 @@ function _processFile(filePath, watchEvent) {
         process.stdout.write(".");
         return;
     }
-
-    
 
     if (filePath.match(/\.pug$/)) {
         return _handlePug(filePath, watchEvent);
@@ -85,7 +82,6 @@ function _handlePug(filePath, watchEvent) {
 }
 
 function _renderAllPug() {
-    
     _.each(allPugFiles, (value, filePath) => {
         renderPug(filePath);
     });

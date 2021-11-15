@@ -11,7 +11,6 @@ module.exports = function renderPug(filePath) {
         .replace(/\.pug$/, ".html");
     const srcPath = path.resolve(path.dirname(__filename), "../src");
 
-    
     const html = pug.renderFile(filePath, {
         doctype: "html",
         filename: filePath,

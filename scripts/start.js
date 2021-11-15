@@ -25,10 +25,6 @@ concurrently(
     }
 ).then(success, failure);
 
-function success() {
-    
-}
+function success() {}
 
-function failure() {
-    
-}
+function failure() {}

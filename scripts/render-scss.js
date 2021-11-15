@@ -29,9 +29,7 @@ module.exports = function renderSCSS() {
     postcss([autoprefixer])
         .process(results.css, { from: "styles.css", to: "styles.css" })
         .then((result) => {
-            result.warnings().forEach((warn) => {
-                
-            });
+            result.warnings().forEach((warn) => {});
             fs.writeFileSync(destPath, result.css.toString());
         });
 };
