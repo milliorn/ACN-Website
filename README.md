@@ -9,4 +9,4 @@
 ![OSSAR](https://github.com/milliorn/ACN-Website/workflows/OSSAR/badge.svg?branch=master)
 ![CodeQL](https://github.com/milliorn/ACN-Website/workflows/CodeQL/badge.svg?branch=master)
 [![Lint Code Base](https://github.com/milliorn/ACN-Website/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/ACN-Website/actions/workflows/super-linter.yml)
-[![Lighthouse 100 Score](https://github.com/milliorn/ACN-Website/blob/master/public/assets/img/100.jpg)
+![Lighthouse 100 Score](https://github.com/milliorn/ACN-Website/blob/main/public/assets/img/100.jpg)
