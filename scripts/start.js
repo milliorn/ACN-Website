@@ -25,10 +25,6 @@ concurrently(
     }
 ).then(success, failure);
 
-function success() {
-    console.log("Success");
-}
+function success() {}
 
-function failure() {
-    console.log("Failure");
-}
+function failure() {}
