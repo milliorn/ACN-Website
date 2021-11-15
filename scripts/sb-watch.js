@@ -1,41 +1,44 @@
-'use strict';
+"use strict";
 
-const _ = require('lodash');
-const chokidar = require('chokidar');
-const path = require('path');
-const renderAssets = require('./render-assets');
-const renderPug = require('./render-pug');
-const renderScripts = require('./render-scripts');
-const renderSCSS = require('./render-scss');
+const _ = require("lodash");
+const chokidar = require("chokidar");
+const path = require("path");
+const renderAssets = require("./render-assets");
+const renderPug = require("./render-pug");
+const renderScripts = require("./render-scripts");
+const renderSCSS = require("./render-scss");
 
-const watcher = chokidar.watch('src', {
+const watcher = chokidar.watch("src", {
     persistent: true,
 });
 
 let READY = false;
 
-process.title = 'pug-watch';
-process.stdout.write('Loading');
+process.title = "pug-watch";
+process.stdout.write("Loading");
 let allPugFiles = {};
 
-watcher.on('add', filePath => _processFile(filePath, 'add'));
-watcher.on('change', filePath => _processFile(filePath, 'change'));
-watcher.on('ready', () => {
+watcher.on("add", (filePath) => _processFile(filePath, "add"));
+watcher.on("change", (filePath) => _processFile(filePath, "change"));
+watcher.on("ready", () => {
     READY = true;
-    console.log(' READY TO ROLL!');
+    console.log(" READY TO ROLL!");
 });
 
 _handleSCSS();
 
 function _processFile(filePath, watchEvent) {
-
     if (!READY) {
         if (filePath.match(/\.pug$/)) {
-            if (!filePath.match(/includes/) && !filePath.match(/mixins/) && !filePath.match(/\/pug\/layouts\//)) {
+            if (
+                !filePath.match(/includes/) &&
+                !filePath.match(/mixins/) &&
+                !filePath.match(/\/pug\/layouts\//)
+            ) {
                 allPugFiles[filePath] = true;
             }
         }
-        process.stdout.write('.');
+        process.stdout.write(".");
         return;
     }
 
@@ -46,7 +49,7 @@ function _processFile(filePath, watchEvent) {
     }
 
     if (filePath.match(/\.scss$/)) {
-        if (watchEvent === 'change') {
+        if (watchEvent === "change") {
             return _handleSCSS(filePath, watchEvent);
         }
         return;
@@ -59,23 +62,30 @@ function _processFile(filePath, watchEvent) {
     if (filePath.match(/src\/assets\//)) {
         return renderAssets();
     }
-
 }
 
 function _handlePug(filePath, watchEvent) {
-    if (watchEvent === 'change') {
-        if (filePath.match(/includes/) || filePath.match(/mixins/) || filePath.match(/\/pug\/layouts\//)) {
+    if (watchEvent === "change") {
+        if (
+            filePath.match(/includes/) ||
+            filePath.match(/mixins/) ||
+            filePath.match(/\/pug\/layouts\//)
+        ) {
             return _renderAllPug();
         }
         return renderPug(filePath);
     }
-    if (!filePath.match(/includes/) && !filePath.match(/mixins/) && !filePath.match(/\/pug\/layouts\//)) {
+    if (
+        !filePath.match(/includes/) &&
+        !filePath.match(/mixins/) &&
+        !filePath.match(/\/pug\/layouts\//)
+    ) {
         return renderPug(filePath);
     }
 }
 
 function _renderAllPug() {
-    console.log('### INFO: Rendering All');
+    console.log("### INFO: Rendering All");
     _.each(allPugFiles, (value, filePath) => {
         renderPug(filePath);
     });
