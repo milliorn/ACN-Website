@@ -22,7 +22,7 @@ watcher.on("add", (filePath) => _processFile(filePath, "add"));
 watcher.on("change", (filePath) => _processFile(filePath, "change"));
 watcher.on("ready", () => {
     READY = true;
-    console.log(" READY TO ROLL!");
+    
 });
 
 _handleSCSS();
@@ -42,7 +42,7 @@ function _processFile(filePath, watchEvent) {
         return;
     }
 
-    console.log(`### INFO: File event: ${watchEvent}: ${filePath}`);
+    
 
     if (filePath.match(/\.pug$/)) {
         return _handlePug(filePath, watchEvent);
@@ -85,7 +85,7 @@ function _handlePug(filePath, watchEvent) {
 }
 
 function _renderAllPug() {
-    console.log("### INFO: Rendering All");
+    
     _.each(allPugFiles, (value, filePath) => {
         renderPug(filePath);
     });
