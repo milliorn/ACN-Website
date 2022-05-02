@@ -40,7 +40,7 @@
         "lodash": "4.17.21"
     },
     "devDependencies": {
-        "autoprefixer": "10.4.6",
+        "autoprefixer": "10.4.7",
         "browser-sync": "2.27.9",
         "chokidar": "3.5.3",
         "concurrently": "7.1.0",
