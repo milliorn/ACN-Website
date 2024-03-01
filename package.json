@@ -42,7 +42,7 @@
   "devDependencies": {
     "autoprefixer": "10.4.17",
     "browser-sync": "2.29.3",
-    "chokidar": "3.5.3",
+    "chokidar": "3.6.0",
     "concurrently": "7.6.0",
     "postcss": "8.4.35",
     "prettier": "3.2.4",
