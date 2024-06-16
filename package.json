@@ -41,12 +41,12 @@
   },
   "devDependencies": {
     "autoprefixer": "10.4.19",
-    "browser-sync": "2.29.3",
+    "browser-sync": "3.0.2",
     "chokidar": "3.6.0",
     "concurrently": "7.6.0",
     "postcss": "8.4.38",
     "prettier": "3.2.5",
-    "pug": "3.0.2",
+    "pug": "3.0.3",
     "sass": "1.76.0",
     "shelljs": "0.8.5"
   }
